@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: #E1D4C9;
+    color: #403F3D;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+header .navigation .icon {
+    background-image: url('./img/coffee-cup.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.preview {
+    background-image: url(./img/img-hero.jpg);
+    width: 100%;
+    border-radius: 40px;
+    background-position: center;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.preview h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 75.6px;
+    color: #E1D4C9;
+    max-width: 530px;
+}
+
+.preview p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 530px;
+    color: #E1D4C9;
+    ;
+}
+
+.preview div button {
+    display: block;
+    width: 200px;
+    height: 64px;
+    background-color: #E1D4C9;
+    border-radius: 100px;
+    color: #403F3D;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider h2 {
+    text-align: center;
+}
+
+.slider div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.slider div .coffe-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.slider div .coffe-content h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.slider div .coffe-content p {
+    max-width: 480px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.slider div .coffe-content .price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.slider div .border-arrow {
+    border: 1px solid #665F55;
+    border-radius: 50%;
+    padding: 24px;
+}
+
+.slider div.leftArrow {
+    background-image: url(./img/arrow-left.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+
+.slider div .rightArrow {
+    background-image: url(./img/arrow-right.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+
+.benefits {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.benefits h2 {
+    text-align: justify;
+}
+
+.benefits .gallery {
+    display: flex;
+    gap: 40px;
+}
+
+.benefits .gallery div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.benefits .gallery img {
+    border-radius: 20px;
+}
+
+.benefits .gallery-part-1 img:last-child,
+.benefits .gallery-part-2 img:first-child {
+    height: 430px;
+    object-fit: cover;
+}
+
+.mobil-apps {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.links p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 630px;
+}
+
+.links .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.links .button {
+    width: 200px;
+    height: 64px;
+    border: 1px solid #665F55;
+    border-radius: 100px;
+    padding: 12px 20px 12px 20px;
+}
+
+.buttons .button {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.buttons .icon {
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+
+.button div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.button div:last-child p:first-child {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.button div:last-child p:last-child {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.button-app .icon {
+    background-image: url(./img/icon-app.svg);
+    background-repeat: no-repeat;
+}
+
+.button-google .icon {
+    background-image: url(./img/icon-google.svg);
+    background-repeat: no-repeat;
+}
