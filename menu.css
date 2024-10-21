@@ -1,0 +1,428 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Inter;
+    }
+    
+    body {
+        margin: 0 auto;
+        max-width: 1440px;
+        background-color: #E1D4C9;
+        color: #403F3D;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    
+    span {
+        color: #B0907A;
+        font-style: italic;
+    }
+    
+    h2 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav {
+        display: flex;
+        gap: 40px;
+    }
+    
+    header nav p:hover {
+        border-bottom: 2px solid #403F3D;
+    }
+    /* header p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    } */
+    
+    header .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    header .navigation:hover {
+        border-bottom: 2px solid #403F3D;
+    }
+    
+    header .navigation .icon {
+        background-image: url('./img/coffee-cup.svg');
+        width: 20px;
+        height: 20px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    .menu h2 {
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .menu-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    .menu-buttons .button {
+        border: 1px solid #C1B6AD;
+        display: flex;
+        gap: 8px;
+        border-radius: 100px;
+        padding: 11px 16px 11px 8px;
+        align-items: center;
+    }
+    /* .menu-buttons .button:hover {
+        background-color: #665F55;
+        color: #E1D4C9;
+    } */
+    
+    .menu-buttons .button .wrapper {
+        background-color: #C1B6AD;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .coffee-icon {
+        background-image: url(./img/coffee-icon.png);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 17px;
+    }
+    
+    .tea-icon {
+        background-image: url(./img/tea-icon.png);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 17px;
+    }
+    
+    .dessert-icon {
+        background-image: url(./img/dessert-icon.png);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 17px;
+    }
+    
+    .coffee-products {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    
+    .item-product {
+        border: 1px solid #C1B6AD;
+        border-radius: 40px;
+        max-width: 310px;
+    }
+    
+    .item-product .img-wrapper img {
+        max-width: 308px;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        height: 195px;
+    }
+    
+    .item-product .description {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .content .description p {
+        font-weight: 400;
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    }
+    
+    .content .price {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+    .content-menu {
+        display: flex;
+        gap: 20px;
+        max-width: 800px;
+        border-radius: 40px;
+    }
+    
+    .content-text .description-text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .content-text h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+    .content-text .about,
+    .content-text .text-of-option {
+        font-weight: 400;
+        /* font-size: 16px; */
+        /* height: 24px; */
+    }
+    
+    .content-img img {
+        border-radius: 40px;
+        max-width: 310px;
+    }
+    
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .content-text .option {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .content-text .option .buttons-row {
+        display: flex;
+        gap: 8px;
+    }
+    
+    .content-text .option .button {
+        display: flex;
+        gap: 8px;
+        border: 1px solid #C1B6AD;
+        border-radius: 100px;
+        padding: 8px 16px 8px 8px;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .content-text .option .wrapper {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #C1B6AD;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-text .total {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .content-text .total p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .content-text .total p:first-child {
+        align-self: flex-start;
+    }
+    
+    .content-text .remark {
+        display: flex;
+        gap: 8px;
+    }
+    
+    .content-text .remark-icon {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-text .remark-icon div {
+        background-image: url(./img/remark-icon.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .content-text .remark p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .button-close {
+        border: 1px solid #665F55;
+        border-radius: 100px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    footer {
+        display: flex;
+        gap: 100px;
+        background-color: #665F55;
+        border-radius: 40px;
+        padding: 100px;
+    }
+    
+    footer .networks {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 530px;
+    }
+    
+    footer h2 {
+        color: #E1D4C9;
+    }
+    
+    .networks div {
+        display: flex;
+        gap: 12px;
+        position: relative;
+    }
+    
+    .social-links {
+        border: 1px solid #C1B6AD;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    
+    .social-links:hover {
+        background-color: #E1D4C9;
+    }
+    
+    .link-twitter::before {
+        content: "";
+        display: block;
+        background-image: url(./img/twitter.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+    }
+    
+    .link-instagram::before {
+        content: "";
+        display: block;
+        background-image: url(./img/instagram.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+    }
+    
+    .link-facebook::before {
+        content: "";
+        display: block;
+        background-image: url(./img/facebook.svg);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+    }
+    
+    footer .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        color: #E1D4C9;
+    }
+    
+    footer .contacts h4 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+    .contacts div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .contacts div p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    
+    .contacts div div {
+        display: flex;
+        gap: 4px;
+        flex-direction: row;
+    }
+    
+    .contacts div div:hover {
+        border-bottom: 2px solid #E1D4C9
+    }
+    
+    .pin-alt {
+        background-image: url(./img/pin-alt.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+    
+    .phone {
+        background-image: url(./img/phone.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+    
+    .clock {
+        background-image: url(./img/clock.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe House</title>
+    <title>Coffee House</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
         <div class='logo'>
             <img src="./img/logo.svg" alt="">
         </div>
-
         <nav>
             <p>Favorite coffee</p>
             <p>About</p>
@@ -34,24 +33,41 @@
             <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
             <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
             <div>
-                <button>Menu</button>
+                <button>Menu </button>
             </div>
         </section>
 
         <section class='slider'>
             <h2>Choose your <span>favorite</span> coffee</h2>
             <div>
-                <div class='border-arrow'>
-                    <div class='leftArrow' '></div>
+                <div class='border-arrow left'>
+                    <div class='leftArrow'></div>
                 </div>
-                <div class=" coffe-content">
-                    <img src="./img/coffee-slider-1.svg" alt="">
-                    <h5>S’mores Frappuccino</h5>
-                    <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                    <p class = 'price '>$5.50</p>
+                <div class="coffee-content">
+                    <div class="slider-img">
+                        <img src="./img/coffee-slider-1.svg" alt="" style="display:block">
+                        <img src="./img/coffee-slider-2.svg" alt="" style="display:none">
+                        <img src="./img/coffee-slider-3.svg" alt="" style="display:none">
+                    </div>
+                    <div class="slider-header">
+                        <h3 style="display:block">S’mores Frappuccino</h3>
+                        <h3 style="display:none">Caramel Macchiato</h3>
+                        <h3 style="display:none">Ice coffee</h3>
+                    </div>
+
+                    <div class="slider-description">
+                        <p style="display:block">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                        <p style="display:none">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                        <p style="display:none">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                    </div>
+                    <div class="slider-price">
+                        <p class='price' style="display:block">$5.50</p>
+                        <p class='price' style="display:none">$5.00</p>
+                        <p class='price' style="display:none">$4.50</p>
+                    </div>
                 </div>
-                <div class = 'border-arrow '>
-                        <div class='rightArrow '> </div>
+                <div class='border-arrow right'>
+                    <div class='rightArrow'> </div>
                 </div>
             </div>
             </div>
@@ -60,35 +76,35 @@
 
         </section>
 
-        <section class = 'benefits '>
+        <section class='benefits '>
             <h2>Resource is <span>the perfect and cozy place </span>where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
-            <div class = gallery>
-                <div class = 'gallery-part-1 '>
+            <div class=gallery>
+                <div class='gallery-part-1 '>
                     <img src="./img/about-1.jpg" alt="">
                     <img src="./img/about-2.jpg" alt="">
                 </div>
-                <div class = 'gallery-part-2 '>
+                <div class='gallery-part-2 '>
                     <img src="./img/about-3.jpg" alt="">
                     <img src="./img/about-4.jpg" alt="">
                 </div>
-                </div>
+            </div>
         </section>
-        
-        <section class = 'mobil-apps '>
+
+        <section class='mobil-apps'>
             <div class='links '>
                 <h2><span>Download</span> our apps to start ordering</h2>
                 <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-                <div class = 'buttons '>
-                    <div class = 'button button-app '>
-                        <div class = 'icon '></div>
+                <div class='buttons '>
+                    <div class='button button-app'>
+                        <div class='icon '></div>
                         <div>
                             <p>Available on the</p>
                             <p>App Store</p>
                         </div>
 
                     </div>
-                    <div class = 'button button-google '>
-                        <div class = 'icon '></div>
+                    <div class='button button-google'>
+                        <div class='icon'></div>
                         <div>
                             <p>Available on</p>
                             <p>Google Play</p>
@@ -97,13 +113,41 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="mobile-screen">
                 <img src="./img/mobile-screens.png" alt="">
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="networks">
+            <h2>Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+            <p></p>
+            <div>
+                <div class='social-links link-twitter '></div>
+                <div class='social-links link-instagram '></div>
+                <div class='social-links link-facebook '></div>
+            </div>
+        </div>
+        <div class="contacts">
+            <h4>Contact us</h4>
+            <div>
+                <div>
+                    <div class="pin-alt"></div>
+                    <p>8558 Green Rd., LA</p>
+                </div>
+                <div>
+                    <div class="phone"></div>
+                    <p>+1 (603) 555-0123</p>
+                </div>
+                <div>
+                    <div class="clock"></div>
+                    <p>Mon-Sat: 9:00 AM – 23:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="./main.js"></script>
 </body>
 
 </html>
