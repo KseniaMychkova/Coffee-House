@@ -35,36 +35,36 @@ leftArrow.addEventListener('click', () => {
 
 setInterval(() => nextItem(), 3000)
 
-const borderArrowLeft = document.querySelector('.slider div .border-arrow.left');
-const borderArrowRight = document.querySelector('.slider div .border-arrow.right');
-const left = document.querySelector('.leftArrow')
-const right = document.querySelector('.rightArrow')
+// const borderArrowLeft = document.querySelector('.slider div .border-arrow.left');
+// const borderArrowRight = document.querySelector('.slider div .border-arrow.right');
+// const left = document.querySelector('.leftArrow')
+// const right = document.querySelector('.rightArrow')
 
-borderArrowLeft.addEventListener('mouseover', () => {
-    borderArrowLeft.style = 'background-color: #665F55'
-        // left.style = 'background-image: url()'
-});
-borderArrowLeft.addEventListener('mouseout', () => {
-    borderArrowLeft.style = 'background-color: #E1D4C9'
-})
+// borderArrowLeft.addEventListener('mouseover', () => {
+//     borderArrowLeft.style = 'background-color: #665F55'
+//         // left.style = 'background-image: url()'
+// });
+// borderArrowLeft.addEventListener('mouseout', () => {
+//     borderArrowLeft.style = 'background-color: #E1D4C9'
+// })
 
-borderArrowRight.addEventListener('mouseover', () => {
-    borderArrowRight.style = 'background-color: #665F55'
-    right.style = 'background-image: url(./img/arrow-right-light.svg)'
-});
+// borderArrowRight.addEventListener('mouseover', () => {
+//     borderArrowRight.style = 'background-color: #665F55'
+//     right.style = 'background-image: url(./img/arrow-right-light.svg)'
+// });
 
-borderArrowRight.addEventListener('mouseout', () => {
-    borderArrowRight.style = 'background-color: #E1D4C9'
-    right.style = 'background-image: url(./img/arrow-right.svg)'
-})
+// borderArrowRight.addEventListener('mouseout', () => {
+//     borderArrowRight.style = 'background-color: #E1D4C9'
+//     right.style = 'background-image: url(./img/arrow-right.svg)'
+// })
 
 
-const buttonApp = document.querySelector('.mobil-apps .links .buttons .button.button-app')
-const buttonAppIcon = document.querySelector('.mobil-apps .buttons .button-app .icon')
-const buttonGoogle = document.querySelector('.mobil-apps .buttons .button-google')
+// const buttonApp = document.querySelector('.mobil-apps .links .buttons .button.button-app')
+// const buttonAppIcon = document.querySelector('.mobil-apps .buttons .button-app .icon')
+// const buttonGoogle = document.querySelector('.mobil-apps .buttons .button-google')
 
-buttonApp.addEventListener('click', () => {
-    buttonApp.style = 'background-color: #665F55; color: # E1D4C9;'
-    buttonAppIcon.sttyle = 'background-image: url(./img/icon-app-light.svg)'
+// buttonApp.addEventListener('click', () => {
+//     buttonApp.style = 'background-color: #665F55; color: # E1D4C9;'
+//     buttonAppIcon.sttyle = 'background-image: url(./img/icon-app-light.svg)'
 
-})
+// })

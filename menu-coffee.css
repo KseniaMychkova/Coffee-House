@@ -47,11 +47,6 @@
     header nav p:hover {
         border-bottom: 2px solid #403F3D;
     }
-    /* header p {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-    } */
     
     header .navigation {
         display: flex;
@@ -97,10 +92,21 @@
         padding: 11px 16px 11px 8px;
         align-items: center;
     }
-    /* .menu-buttons .button:hover {
+    /* .menu-buttons .button:first-child {
         background-color: #665F55;
         color: #E1D4C9;
+        & .wrapper {
+            background-color: #E1D4C9;
+        }
     } */
+    
+    .menu-buttons .button:hover {
+        background-color: #665F55;
+        color: #E1D4C9;
+        & .wrapper {
+            background-color: #E1D4C9;
+        }
+    }
     
     .menu-buttons .button .wrapper {
         background-color: #C1B6AD;
@@ -179,55 +185,55 @@
         line-height: 30px;
     }
     
-    .content-menu {
+    .modal {
         display: flex;
         gap: 20px;
         max-width: 800px;
         border-radius: 40px;
     }
     
-    .content-text .description-text {
+    .modal-text .description-text {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
     
-    .content-text h2 {
+    .modal-text h2 {
         font-size: 24px;
         font-weight: 600;
         line-height: 30px;
     }
     
-    .content-text .about,
-    .content-text .text-of-option {
+    .modal-text .about,
+    .modal-text .text-of-option {
         font-weight: 400;
         /* font-size: 16px; */
         /* height: 24px; */
     }
     
-    .content-img img {
+    .modal-img img {
         border-radius: 40px;
         max-width: 310px;
     }
     
-    .content-text {
+    .modal-text {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
     
-    .content-text .option {
+    .modal-text .option {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
     
-    .content-text .option .buttons-row {
+    .modal-text .option .buttons-row {
         display: flex;
         gap: 8px;
     }
     
-    .content-text .option .button {
+    .modal-text .option .button {
         display: flex;
         gap: 8px;
         border: 1px solid #C1B6AD;
@@ -237,7 +243,16 @@
         align-items: center;
     }
     
-    .content-text .option .wrapper {
+    .modal-text .option .button:hover {
+        background-color: #665F55;
+        color: #E1D4C9;
+        & .wrapper {
+            background-color: #E1D4C9;
+            color: #403F3D;
+        }
+    }
+    
+    .modal-text .option .wrapper {
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -249,26 +264,26 @@
         align-items: center;
     }
     
-    .content-text .total {
+    .modal-text .total {
         display: flex;
         justify-content: space-between;
     }
     
-    .content-text .total p {
+    .modal-text .total p {
         font-size: 24px;
         line-height: 30px;
     }
     
-    .content-text .total p:first-child {
+    .modal-text .total p:first-child {
         align-self: flex-start;
     }
     
-    .content-text .remark {
+    .modal-text .remark {
         display: flex;
         gap: 8px;
     }
     
-    .content-text .remark-icon {
+    .modal-text .remark-icon {
         width: 16px;
         height: 16px;
         display: flex;
@@ -276,14 +291,14 @@
         align-items: center;
     }
     
-    .content-text .remark-icon div {
+    .modal-text .remark-icon div {
         background-image: url(./img/remark-icon.svg);
         background-repeat: no-repeat;
         width: 16px;
         height: 16px;
     }
     
-    .content-text .remark p {
+    .modal-text .remark p {
         font-size: 10px;
         line-height: 14px;
     }
@@ -295,6 +310,11 @@
         vertical-align: middle;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    
+    .button-close:hover {
+        background-color: #665F55;
+        color: #E1D4C9;
     }
     
     footer {
@@ -331,6 +351,15 @@
     
     .social-links:hover {
         background-color: #E1D4C9;
+        &.link-twitter::before {
+            background-image: url(./img/twitter-dark.svg);
+        }
+        &.link-instagram::before {
+            background-image: url(./img/instagram-dark.svg);
+        }
+        &.link-facebook::before {
+            background-image: url(./img/facebook-dark.svg);
+        }
     }
     
     .link-twitter::before {

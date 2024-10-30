@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee House</title>
-    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./menu-coffee.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -55,118 +55,93 @@
 
             <div class="coffee-products">
 
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/irish-coffee.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Irish coffee</h3>
-                            <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
-                        </div>
-                        <p class="price">$7.00</p>
-                    </div>
-                </div>
-
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/kahlua.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Kahlua coffee</h3>
-                            <p>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
-
-                        </div>
-                        <p class="price">$7.00</p>
-                    </div>
-                </div>
-
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/honey-raf.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Honey raf</h3>
-                            <p>Espresso with frothed milk, cream and aromatic honey</p>
-                        </div>
-                        <p class="price">$5.50</p>
-                    </div>
-                </div>
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/ice.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Ice cappuccino</h3>
-                            <p>Cappuccino with soft thick foam in summer version with ice</p>
-                        </div>
-                        <p class="price">$5.00</p>
-                    </div>
-                </div>
-
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/espresso.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Espresso</h3>
-                            <p>Classic black coffee</p>
-                        </div>
-                        <p class="price">$4.50</p>
-                    </div>
-                </div>
-
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/latte.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Latte</h3>
-                            <p>Espresso coffee with the addition of steamed milk and dense milk foam</p>
-                        </div>
-                        <p class="price">$5.50</p>
-                    </div>
-                </div>
-
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/macchiato.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Latte macchiato</h3>
-                            <p>Espresso with frothed milk and chocolate</p>
-                        </div>
-                        <p class="price">$5.50</p>
-                    </div>
-                </div>
-
-                <div class="item-product">
-                    <div class="img-wrapper">
-                        <img src="./img/cognac.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="description">
-                            <h3>Coffee with cognac</h3>
-                            <p>Fragrant black coffee with cognac and whipped cream</p>
-                        </div>
-                        <p class="price">$6.50</p>
-                    </div>
-                </div>
 
             </div>
         </section>
 
-        <section class="content-menu">
-            <div class="content-img">
+        <section class="modal" style="display:none">
+
+            <div class="modal-img">
+                <img src="" alt="">
+            </div>
+            <div class="modal-text">
+                <div class="description-text">
+                    <h2></h2>
+                    <p class="about"></p>
+                </div>
+
+                <div class="option">
+                    <p class="text-of-option">Size</p>
+                    <div class="buttons-row">
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>S</p>
+                            </div>
+                            <p>200 ml</p>
+                        </div>
+
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>M</p>
+                            </div>
+                            <p>300 ml</p>
+                        </div>
+
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>L</p>
+                            </div>
+                            <p>400 ml</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option">
+                    <p class="text-of-option">Additives</p>
+                    <div class="buttons-row">
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>1</p>
+                            </div>
+                            <p>Sugar</p>
+                        </div>
+
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>2</p>
+                            </div>
+                            <p>Cinnamon</p>
+                        </div>
+
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>3</p>
+                            </div>
+                            <p>Syrup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <p>Total:</p>
+                    <p class="total-price"></p>
+                </div>
+
+                <div class="remark">
+                    <div class="remark-icon">
+                        <div></div>
+                    </div>
+                    <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                </div>
+                <div class="button-close">
+                    <p>Close</p>
+                </div>
+            </div>
+
+            <!-- <div class="modal-img">
                 <img src="./img/irish-coffee.jpg" alt="">
             </div>
-            <div class="content-text">
+            <div class="modal-text">
                 <div class="description-text">
                     <h2>Irish coffee</h2>
                     <p class="about">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
@@ -238,8 +213,10 @@
                 <div class="button-close">
                     <p>Close</p>
                 </div>
-            </div>
+            </div> -->
         </section>
+
+
     </main>
 
     <footer>
@@ -270,7 +247,7 @@
             </div>
         </div>
     </footer>
-    <script src="./menu.js"></script>
+    <script src="./menu-coffee.js"></script>
 </body>
 
 </html>
