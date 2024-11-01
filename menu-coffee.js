@@ -147,8 +147,6 @@ const content = [{
 
 ]
 
-
-
 const func = (str) => {
     coffee_products.innerHTML = ''
     const res = content.filter(el => el.category === str)
@@ -188,111 +186,97 @@ const arrItem = document.querySelectorAll('.item-product')
 const modal = document.querySelector('.modal')
 const h2 = document.querySelector('.modal h2')
 const about = document.querySelector('.about')
-const modal_img = document.querySelector('.modal-img img')
-const total_price = document.querySelector('.total-price')
-const item_prod_img = document.querySelector('.item-product img')
-const item_prod_h3 = document.querySelector('.item-product .content h3')
-const item_prod_decription = document.querySelector('.item-product .description p')
-    // const name_ = document.querySelector('h2')
+
 let flag = false;
 
 
-// coffee_products.addEventListener('click', (event) => {
-//     modal.style = 'display: flex';
-//     modal_img.src = event.target.item_prod_img;
-//     h2.textContent = event.target.item_prod_h3;
-//     about.textContent = event.target.item_prod_decription
-// total_price.textContent = event.target.price.textContent
-// })
+coffee_products.addEventListener('click', (e) => {
+    modal.style = 'display: flex'
+    const background_style = document.querySelector('.background');
+    background_style.style = 'position: fixed; width: 100%; height: 100%; background-color: #403F3D; opacity: 0.7; z-index: 10; top: 0; left: 0'
+    let blockParent = e.target.closest('.item-product');
+    const title = blockParent.querySelector('.description h3').textContent
+    const description = blockParent.querySelector('.description p').textContent
+    const img = blockParent.querySelector('.img-wrapper img').src
+    const price = blockParent.querySelector('.price').textContent
+    modal.innerHTML = `<div class="modal-img">
+                <img src="${img}" alt="">
+            </div>
+            <div class="modal-text">
+                <div class="description-text">
+                    <h2>${title}</h2>
+                    <p class="about">${description}</p>
+                </div>
 
+                <div class="option">
+                    <p class="text-of-option">Size</p>
+                    <div class="buttons-row">
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>S</p>
+                            </div>
+                            <p>200 ml</p>
+                        </div>
 
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>M</p>
+                            </div>
+                            <p>300 ml</p>
+                        </div>
 
-// arrItem.forEach(el => {
-//     el.addEventListener('click', () => {
-//         const filter = content.filter(elem => elem.h3 === name_.textContent)
-//         modal.style = 'display: flex'
-//         const divContainer = document.createElement('div');
-//         divContainer.className = 'container'
-//         divContainer.innerHTML = `<div class="modal-img">
-//                 <img src="${filter[0].img}" alt="">
-//             </div>
-//             <div class="modal-text">
-//                 <div class="description-text">
-//                     <h2>${filter[0].h3}</h2>
-//                     <p class="about">${filter[0].description}</p>
-//                 </div>
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>L</p>
+                            </div>
+                            <p>400 ml</p>
+                        </div>
+                    </div>
+                </div>
 
-//                 <div class="option">
-//                     <p class="text-of-option">Size</p>
-//                     <div class="buttons-row">
-//                         <div class="button">
-//                             <div class="wrapper">
-//                                 <p>S</p>
-//                             </div>
-//                             <p>200 ml</p>
-//                         </div>
+                <div class="option">
+                    <p class="text-of-option">Additives</p>
+                    <div class="buttons-row">
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>1</p>
+                            </div>
+                            <p>Sugar</p>
+                        </div>
 
-//                         <div class="button">
-//                             <div class="wrapper">
-//                                 <p>M</p>
-//                             </div>
-//                             <p>300 ml</p>
-//                         </div>
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>2</p>
+                            </div>
+                            <p>Cinnamon</p>
+                        </div>
 
-//                         <div class="button">
-//                             <div class="wrapper">
-//                                 <p>L</p>
-//                             </div>
-//                             <p>400 ml</p>
-//                         </div>
-//                     </div>
-//                 </div>
+                        <div class="button">
+                            <div class="wrapper">
+                                <p>3</p>
+                            </div>
+                            <p>Syrup</p>
+                        </div>
+                    </div>
+                </div>
 
-//                 <div class="option">
-//                     <p class="text-of-option">Additives</p>
-//                     <div class="buttons-row">
-//                         <div class="button">
-//                             <div class="wrapper">
-//                                 <p>1</p>
-//                             </div>
-//                             <p>Sugar</p>
-//                         </div>
+                <div class="total">
+                    <p>Total:</p>
+                    <p class="total-price">${price}</p>
+                </div>
 
-//                         <div class="button">
-//                             <div class="wrapper">
-//                                 <p>2</p>
-//                             </div>
-//                             <p>Cinnamon</p>
-//                         </div>
-
-//                         <div class="button">
-//                             <div class="wrapper">
-//                                 <p>3</p>
-//                             </div>
-//                             <p>Syrup</p>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 <div class="total">
-//                     <p>Total:</p>
-//                     <p class="total-price">${filter[0].price}</p>
-//                 </div>
-
-//                 <div class="remark">
-//                     <div class="remark-icon">
-//                         <div></div>
-//                     </div>
-//                     <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
-//                 </div>
-//                 <div class="button-close">
-//                     <p>Close</p>
-//                 </div>
-//             </div>`
-
-//     })
-// })
-
-// document.querySelector('.modal .button-close').addEventListener('click', () => {
-//     modal.style = 'display: none'
-// })
+                <div class="remark">
+                    <div class="remark-icon">
+                        <div></div>
+                    </div>
+                    <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                </div>
+                <div class="button-close">
+                    <p>Close</p>
+                </div>
+            </div>`
+    document.querySelector('.button-close').addEventListener('click', () => {
+        modal.style = 'display: none'
+        background_style.style = 'display: none'
+    })
+})
